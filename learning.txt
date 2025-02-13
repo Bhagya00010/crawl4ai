@@ -1,0 +1,168 @@
+# Installation
+---------------
+py -m pip install crawl4ai  # Install the crawl4ai package
+python -m venv myenv        # Create virtual environment
+py -m venv myenv           # Alternative command for Windows
+myenv\Scripts\activate
+
+
+# Running Scripts
+---------------
+python p1.py               # Run any example script
+
+# Folder Structure & Examples
+---------------
+
+1. quickstart/
+   - Basic examples of using crawl4ai
+   - p1.py: Simple crawling of chatgpt.com up to 300 chars [AsyncWebCrawler,asyncio]
+   - p2.py: Crawling with browser config fetch , complete time [AsyncWebCrawler,BrowserConfig,CrawlerRunConfig,CacheMode,asyncio]
+   - p3.py: Content filtering and markdown generation
+   - p4.py: Structured data extraction from HTML [JsonCssExtractionStrategy,AsyncWebCrawler,asyncio,CrawlerRunConfig, CacheMode]
+   - p5.py: LLM-based data extraction
+   - p6.py: Parallel crawling example [AsyncWebCrawler,asyncio, CrawlerRunConfig, CacheMode]
+   - p7.py: CSS-based structured data extraction [JsonCssExtractionStrategy,AsyncWebCrawler,CrawlerRunConfig,CacheMode,JSON,asyncio]
+
+2. SSL-Certificate/
+   - p1.py: SSL certificate extraction and export [AsyncWebCrawler,asyncio,CrawlerRunConfig,CacheMode,os,asyncio]
+   Output: Certificate info and files in PEM/DER/JSON formats
+
+3. lazy-loaded/
+   - p1.py: Handling lazy-loaded content [asyncio,AsyncWebCrawler,BrowserConfig,CrawlerRunConfig]
+   Output: Images from dynamically loaded content
+
+4. file-downloading/
+   - p1.py: Downloading files from websites
+   Output: Downloaded files in specified directory
+
+5. overview/
+   - p1.py: Proxy configuration example
+   - p2.py: PDF and screenshot capture
+   - p3.py: SSL certificate handling
+   - p4.py: Custom headers usage
+   - p5.py: Session state management
+   - p6.py: Robots.txt handling
+   - p7.py: Advanced configuration
+
+6. content-selection/
+   - p1.py: CSS selector based content extraction [AsyncWebCrawler,asyncio,CrawlerRunConfig,CacheMode] (Doubt in css_selector)
+   - p2.py: Content filtering [AsyncWebCrawler,asyncio,CrawlerRunConfig,CacheMode]
+   - p3.py: iframe processing [AsyncWebCrawler,CrawlerRunConfig,asyncio]
+   - p4.py: Structured data extraction [JsonCssExtractionStrategy,AsyncWebCrawler,asyncio,CrawlerRunConfig, CacheMode]
+   -------------------
+   - p5.py: Advanced content extraction [AsyncWebCrawler,asyncio,CrawlerRunConfig,CacheMode]
+   - p6.py: LXML strategy usage [AsyncWebCrawler,asyncio,CrawlerRunConfig,CacheMode]
+   - p7.py: Custom scraping strategy [AsyncWebCrawler,asyncio,CrawlerRunConfig,CacheMode]
+
+7. Link-Media/
+   - p1.py: Basic link extraction external link ko exclude and social media ki link ko 
+      bhi excluude kar shakte hai [AsyncWebCrawler,asyncio,BrowserConfig, CrawlerRunConfig]
+   - p2.py: Advanced media handling
+   Output: Links and media statistics
+
+8. Local-Files-Raw-HTML/
+   - p1.py: Web crawling
+   - p2.py: Local file crawling
+   - p3.py: Raw HTML processing
+   - p4.py: Comparison of different sources
+   Output: Markdown content from different sources
+
+9. simple_crawling/
+   - p1.py: Basic crawling setup [AsyncWebCrawler,BrowserConfig,CrawlerRunConfig,asyncio]
+   - p2.py: Default configuration usage
+   - p3.py: Advanced filtering
+   - p4.py: Content processing
+   Output: Clean markdown content
+
+10 Multi-URL-Crawling-with-Dispatchers/
+   -p1.py : process with multiple url parallel [AsyncWebCrawler,CrawlerRunConfig,List,asyncio]
+
+11 Crawler-CrawlResult
+   -p1.py :  Doubt 
+
+12 Crawl Dispatcher
+   We’re excited to announce a Crawl Dispatcher module that can handle thousands of crawling tasks simultaneously. 
+   By efficiently managing system resources (memory, CPU, network), this dispatcher ensures high-performance data extraction at scale.
+    It also provides real-time monitoring of each crawler’s status, memory usage, and overall progress.
+
+   Stay tuned—this feature is coming soon in an upcoming release of Crawl4AI! For the latest news, keep an eye on our changelogs and follow @unclecode on X.
+
+13 Identity Based Crawling
+
+14 Browser & Crawler Config
+
+15 Proxy & Security
+
+16 LLM-Strategies
+  1. Data Structure Design:
+   - Using Pydantic models for data validation and schema definition
+   - Hierarchical structure design for complex data (e.g., knowledge graphs)
+   - Type hinting for better code clarity and IDE support
+
+  2. LLM Strategy Configuration:
+   - Token management through chunking (chunk_token_threshold)
+   - Input format specification (markdown vs. html)
+   - Temperature control for output consistency
+   - Max tokens limitation for response size control
+
+  3. Crawler Configuration:
+   - Async operations for better performance
+   - Browser configuration (headless mode)
+   - Cache management for optimization
+   - Error handling and result validation
+
+  4. Key Differences between p1.py and p2.py:
+   p1.py (Product Extraction):
+   - Simple schema with name/price
+   - Smaller token threshold (1000)
+   - Markdown input format
+   - Focus on discrete product information
+
+   p2.py (Knowledge Graph):
+   - Complex nested schema
+   - Larger token threshold (1400)
+   - HTML input format
+   - Focus on entity relationships
+
+  5. Best Practices:
+   - Environment variables for sensitive data
+   - Proper error handling
+   - File output handling for large datasets
+   - Usage tracking and monitoring
+
+  6. Performance Considerations:
+   - Chunking strategy impact on accuracy
+   - Token threshold optimization
+   - Cache mode selection
+   - Async execution benefits
+
+Key Features Demonstrated:
+------------------------
+1. Basic Crawling
+2. SSL Certificate Handling
+3. Lazy Loading Support
+4. File Downloads
+5. Proxy Configuration
+6. Content Selection
+7. Link/Media Processing
+8. Local File Processing
+9. Structured Data Extraction
+10. LLM Integration
+
+
+
+
+Fit Markdown
+Page Interaction
+Cache Modes
+
+
+
+Hooks & Auth
+Session Management
+
+
+
+Browser & Crawler Config
+CrawlResult
+Strategies

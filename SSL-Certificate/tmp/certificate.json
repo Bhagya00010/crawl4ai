@@ -1,0 +1,55 @@
+{
+  "subject": {
+    "CN": "www.apnacollege.in"
+  },
+  "issuer": {
+    "C": "US",
+    "O": "Let's Encrypt",
+    "CN": "E5"
+  },
+  "version": 2,
+  "serial_number": "0x38d67ad117e2124683867af532929d17098",
+  "not_before": "20241222162100Z",
+  "not_after": "20250322162059Z",
+  "fingerprint": "42443a38413a36393a37453a43383a38363a30333a41433a43333a34423a42343a39333a42383a33453a35373a31363a46323a39443a45433a45343a31353a41373a38463a43383a37383a37383a30303a42313a34433a31333a30353a3132",
+  "signature_algorithm": "ecdsa-with-SHA384",
+  "raw_cert": "MIIDhDCCAwugAwIBAgISA41nrRF+ISRoOGevUykp0XCYMAoGCCqGSM49BAMDMDIxCzAJBgNVBAYTAlVTMRYwFAYDVQQKEw1MZXQncyBFbmNyeXB0MQswCQYDVQQDEwJFNTAeFw0yNDEyMjIxNjIxMDBaFw0yNTAzMjIxNjIwNTlaMB0xGzAZBgNVBAMTEnd3dy5hcG5hY29sbGVnZS5pbjBZMBMGByqGSM49AgEGCCqGSM49AwEHA0IABJ3iz5Ptljqsd+6yaVmaHfaeGZMH7cIvr6ReMhhM05LNtckbgTwe++msTBqywrLM+zTMpdYMq0efBU0c8ZtdepyjggIUMIICEDAOBgNVHQ8BAf8EBAMCB4AwHQYDVR0lBBYwFAYIKwYBBQUHAwEGCCsGAQUFBwMCMAwGA1UdEwEB/wQCMAAwHQYDVR0OBBYEFCDc1Ie+QMegopjAlCxjuQF27LtvMB8GA1UdIwQYMBaAFJ8rX888IU+dBLftKyzExnCL0tcNMFUGCCsGAQUFBwEBBEkwRzAhBggrBgEFBQcwAYYVaHR0cDovL2U1Lm8ubGVuY3Iub3JnMCIGCCsGAQUFBzAChhZodHRwOi8vZTUuaS5sZW5jci5vcmcvMB0GA1UdEQQWMBSCEnd3dy5hcG5hY29sbGVnZS5pbjATBgNVHSAEDDAKMAgGBmeBDAECATCCAQQGCisGAQQB1nkCBAIEgfUEgfIA8AB3AHMgIg8IFor588SmiwqyappKAO71d4WKCE0FANSlQkRZAAABk+9hmBAAAAQDAEgwRgIhALdsnsj43SSfGUSlOsiqrEVUeAm1b1msMMKjrOF+SfuYAiEA7Ig8kCBGKS4OcyTvWR0xg4wTmQkt9MvKIQP/HAA9eBgAdQCi4wrkRe+9rZt+OO1HZ3dT14JbhJTXK14bLMS5UKRH5wAAAZPvYZgPAAAEAwBGMEQCIA9hcy/dppP0O3A7zPTMMfefw2C+DjVE9IGsJH1hHMSyAiBeVbXvhUdOu2fV5649mduGkkj8h/2EvDUMDgjDCYugbDAKBggqhkjOPQQDAwNnADBkAjBOOjbQuNXsbGWIpoFouDktPPn5RpPbI5dl+fjuk3NFVeRJPOMB3lZu+UlIVtGhSjkCMELDykIl/LT9BGGgcWLDwA4zqY8QLWVmDV9ebscZSNnlXYoIE4rq6xHYkzNKoG8Hlg==",
+  "extensions": [
+    {
+      "name": "keyUsage",
+      "value": "Digital Signature"
+    },
+    {
+      "name": "extendedKeyUsage",
+      "value": "TLS Web Server Authentication, TLS Web Client Authentication"
+    },
+    {
+      "name": "basicConstraints",
+      "value": "CA:FALSE"
+    },
+    {
+      "name": "subjectKeyIdentifier",
+      "value": "20:DC:D4:87:BE:40:C7:A0:A2:98:C0:94:2C:63:B9:01:76:EC:BB:6F"
+    },
+    {
+      "name": "authorityKeyIdentifier",
+      "value": "9F:2B:5F:CF:3C:21:4F:9D:04:B7:ED:2B:2C:C4:C6:70:8B:D2:D7:0D"
+    },
+    {
+      "name": "authorityInfoAccess",
+      "value": "OCSP - URI:http://e5.o.lencr.org\nCA Issuers - URI:http://e5.i.lencr.org/"
+    },
+    {
+      "name": "subjectAltName",
+      "value": "DNS:www.apnacollege.in"
+    },
+    {
+      "name": "certificatePolicies",
+      "value": "Policy: 2.23.140.1.2.1"
+    },
+    {
+      "name": "ct_precert_scts",
+      "value": "Signed Certificate Timestamp:\n    Version   : v1 (0x0)\n    Log ID    : 73:20:22:0F:08:16:8A:F9:F3:C4:A6:8B:0A:B2:6A:9A:\n                4A:00:EE:F5:77:85:8A:08:4D:05:00:D4:A5:42:44:59\n    Timestamp : Dec 22 17:19:30.832 2024 GMT\n    Extensions: none\n    Signature : ecdsa-with-SHA256\n                30:46:02:21:00:B7:6C:9E:C8:F8:DD:24:9F:19:44:A5:\n                3A:C8:AA:AC:45:54:78:09:B5:6F:59:AC:30:C2:A3:AC:\n                E1:7E:49:FB:98:02:21:00:EC:88:3C:90:20:46:29:2E:\n                0E:73:24:EF:59:1D:31:83:8C:13:99:09:2D:F4:CB:CA:\n                21:03:FF:1C:00:3D:78:18\nSigned Certificate Timestamp:\n    Version   : v1 (0x0)\n    Log ID    : A2:E3:0A:E4:45:EF:BD:AD:9B:7E:38:ED:47:67:77:53:\n                D7:82:5B:84:94:D7:2B:5E:1B:2C:C4:B9:50:A4:47:E7\n    Timestamp : Dec 22 17:19:30.831 2024 GMT\n    Extensions: none\n    Signature : ecdsa-with-SHA256\n                30:44:02:20:0F:61:73:2F:DD:A6:93:F4:3B:70:3B:CC:\n                F4:CC:31:F7:9F:C3:60:BE:0E:35:44:F4:81:AC:24:7D:\n                61:1C:C4:B2:02:20:5E:55:B5:EF:85:47:4E:BB:67:D5:\n                E7:AE:3D:99:DB:86:92:48:FC:87:FD:84:BC:35:0C:0E:\n                08:C3:09:8B:A0:6C"
+    }
+  ]
+}
